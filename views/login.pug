@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  form(action='/login', method='POST')
+      | email: 
+      input(type='email', name='email', value='')
+      |           password: 
+      input(type='password', name='password', value='')
+      |          
+      input(type='submit', value='Submit')
+  

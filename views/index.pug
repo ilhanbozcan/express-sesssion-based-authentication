@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  h1= title
+  
+  
+  if userId
+    a(class='button' href="/home") Home
+
+
+  else
+    a(class = 'button' href="/login") Login
+    |
+    |
+
+    a(class='button' href="/register") Register
+    |
+    |
+    form(action='/logout', method='POST')
+      input(type='submit', value='Logout')
+    |
+    |
+
+  
+
+
